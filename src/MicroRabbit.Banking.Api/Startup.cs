@@ -67,7 +67,6 @@ namespace MicroRabbit.Banking.Api
 				c.IncludeXmlComments(GetXmlCommentsPath());
 			});
 
-			services.AddMediatR(typeof(Startup).GetTypeInfo().Assembly);
 			DependencyContainer.RegisterServices(services);
 		}
 

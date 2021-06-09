@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+@{
+	ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+	<h1 class="display-4">Welcome</h1>
+	<p>ASP.NET Core Web App</p>
+</div>
+
+<form action="/home/transfer" method="post">
+	<div class="form-group">
+		<label for="FromAccount">From Account:</label>
+		<input type="text" name="FromAccount" />
+	</div>
+	<div class="form-group">
+		<label for="ToAccount">To Account:</label>
+		<input type="text" name="ToAccount" />
+	</div>
+	<div class="form-group">
+		<label for="TransferAmount">Amount:</label>
+		<input type="text" name="TransferAmount" />
+	</div>
+	<hr />
+	<input type="submit" name="Transfer" class="btn btn-primary" />
+</form>
